@@ -1,66 +1,259 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
 /* Your code starts here! */
+.help {
+	border: 1px solid red;
+}
+.container {
+  width: 875px;
+  margin: auto;
+}
+
+header {
+	margin-top: 13px;
+}
+
+header nav {
+	display: inline-block;
+	margin-top:
+}
+
+header nav a {
+	margin-right: 63px;
+	font-size: 14px;
+	text-decoration: none;
+	color: #b0b0b0;
+}
+
+header img.logo {
+	margin: 0px 0 0 27px;
+}
+
+main .titleContainer {
+	margin: 83px 0 36px 0;
+	text-align: right;
+	border-bottom: 1px solid black;
+	height: 460px;
+}
+main .pageTitle {
+	display: inline-block;
+	height: 300px;
+	width: 400px;
+	vertical-align: middle;
+	text-align: center;
+	margin-right: 45px;
+}
+main .pageTitle h1 {
+	font-size: 78px;
+	margin: 20px 0 9px 0;
+}
+main .titleArt {
+	display: inline-block;
+	height: 379px;
+	width: 379px;
+	vertical-align: middle;
+}
+main .pageTitle button {
+	background: #fff;
+	border: 1px solid black;
+	width: 170px;
+	height: 30px;
+	font-size: 16px;
+}
+
+main section {
+	display: inline-block;
+	font-size: 16px;
+}
+
+main section.mainContent {
+	width: 415px;
+	height: 100px;
+}
+main div.mainContainer {
+	margin-bottom: 45px;
+}
+main section.mainContent:first-child {
+	margin-right: 25px;
+}
+section h2 {
+	font-weight: 500;
+	font-size: 18px;
+}
+
+main div.mainContainerSmall {
+	margin: 18px 0 50px 0;
+	border-bottom: 1px solid black;
+	height: 200px;
+}
+
+main section.mainContentSmall {
+	width: 275px;
+	height: 150px;
+	margin-top: 20px;
+	margin-right: 15px;
+}
+
+main section.mainContentSmall:nth-child(3) {
+	margin-right: 0;
+}
+
+section.contact p {
+	margin-bottom: 15px;
+	font-size: 16px;
+}
+
+footer p {
+	text-align: center;
+	font-size: 14px;
+	margin-top: 50px;
+}
