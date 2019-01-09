@@ -160,22 +160,57 @@ h5 {
 
 header {
 	margin-top: 13px;
+  background: #007fab;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin-top: 0px;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
 }
 
 header nav {
 	display: inline-block;
-	margin-top:
 }
 
 header nav a {
-	margin-right: 63px;
+  display: inline-block;
+	margin-left: 63px;
 	font-size: 14px;
 	text-decoration: none;
-	color: #b0b0b0;
+  padding:4px 10px;
+  vertical-align: middle;
+	animation-name: navAnimationOut;
+  animation-duration: 0.2s;
+  animation-fill-mode: both;
+}
+
+@keyframes navAnimation {
+  from {
+    color: #fff;
+  } to {
+    text-shadow: 2px 2px 8px #FF0000;
+    color: #DBB886;
+  }
+}
+@keyframes navAnimationOut {
+  from {
+    text-shadow: 2px 2px 8px #FF0000;
+    color: #DBB886;
+  } to {
+    color: #fff;
+  }
+}
+header nav a:hover {
+  animation-name: navAnimation;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
 }
 
 header img.logo {
 	margin: 0px 0 0 27px;
+  vertical-align: middle;
 }
 
 main .titleContainer {
@@ -196,6 +231,35 @@ main .pageTitle h1 {
 	font-size: 78px;
 	margin: 20px 0 9px 0;
 }
+
+@keyframes buttonShadow {
+  from {
+    box-shadow: 2px 7px 12px rgba(0, 0, 0, 0.3);
+  } to {
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@keyframes buttonShadowOut {
+  from {
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.3);
+  } to {
+    box-shadow: 2px 7px 12px rgba(0, 0, 0, 0.3);
+  }
+}
+
+main .pageTitle button {
+  animation-name: buttonShadowOut;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+main .pageTitle button:hover {
+  animation-name: buttonShadow;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
 main .titleArt {
 	display: inline-block;
 	height: 379px;
@@ -218,6 +282,7 @@ main section {
 main section.mainContent {
 	width: 415px;
 	height: 100px;
+  font-family: 'Roboto', sans-serif;
 }
 main div.mainContainer {
 	margin-bottom: 45px;
@@ -234,6 +299,7 @@ main div.mainContainerSmall {
 	margin: 18px 0 50px 0;
 	border-bottom: 1px solid black;
 	height: 200px;
+  font-family: 'Roboto', sans-serif;
 }
 
 main section.mainContentSmall {
